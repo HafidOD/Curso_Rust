@@ -1,0 +1,33 @@
+compilar 
+$ rustc [nombre archivo]
+ejemplo
+$ rustc hola_mundo.rs
+
+/********** CARGO **************************/
+Cargo es el manejador de paquetes de Rust 
+
+$ cargo new [nombre del paquete]
+$ cargo new variables
+
+compilar con cargo
+$ cargo build
+
+se crea un carpeta target donde el .exe se encuentra dentro de la carpeta debug
+
+para ejecutar el .exe
+$ cargo run
+
+si se hace cambio en algun archivo al ejecutar cargo run se compilara de nuevo el archivo automaticamente
+
+/********** variables ************/
+las variables por defecto son inmutables, es decir, ya no se pueden cambiar su valor
+  let numero_uno: i32 = 10; // define tipo de dato let <identificador>: <tipo> = <valor>
+  let numero_dos = 15; // o se puede hacer de forma dinamica
+
+para poder cambiar valor tenemos que indicar que la variable va ser mutable
+se pasa la palabra reservada mut
+let mut numero_dos = 15; // o se puede hacer de forma dinamica
+
+
+desarrollo web con rust
+https://rocket.rs/
